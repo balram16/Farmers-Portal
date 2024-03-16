@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat;:wght@100;300;400;500;700&display=swap');
+@import './variables.css';
+@import './utilities.css';
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--pure);
+}
+
+header {
+    background: url('..//img/animalbackground.jpg');
+    min-height: 100vh;
+    background-size: cover;
+}
+
+header nav {
+    padding: 20px 40px 20px 100px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    border-bottom: 1px solid var(--gray);
+}
+
+header nav .nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .nav-right a {
+    text-decoration: none;
+    color: var(--dark);
+    margin-right: 30px;
+    position: relative;
+}
+
+header nav .nav-right a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    width: 0;
+    height: 2px;
+    background: var(--dark);
+    transition: width .3s ease-in-out;
+}
+
+header nav .nav-right a:hover:after {
+    width: 70%;
+}
+
+header nav .nav-right a.active:after {
+    width: 70%;
+}
+
+header nav .nav-right .search>div {
+    background: var(--dark);
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 50px;
+}
+
+header nav .nav-right .search>div input {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    ;
+}
+
+.hero .cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: calc(100vh-80px);
+}
+
+.hero .cta h1 {
+    font-weight: 1000;
+    font-size: 60px;
+    line-height: 1.7;
+    margin: 30px;
+    color: var(--dark);
+}
+
+.hero .cta p {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1.7;
+    margin: 30px;
+    color: var(--pure);
+    margin-top: 100px;
+}
+
+.hero .cta .left-section {
+    padding: 0 60px 0 30px;
+}
+
+section.Agriculture {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 80px;
+    padding: 100px 0;
+}
+
+section.Agriculture .dairypic {
+    padding-top: 10px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+section.Agriculture .poultry h4 {
+    font-size: 30px;
+    margin-top: 40px;
+    margin-left: 30px;
+    color: var(--dark);
+}
+
+section.Agriculture .poultry p {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 30px;
+    color: var(--dark);
+}
+
+section.Agriculture .fishpic {
+    padding-top: 10px;
+    margin-top: 90px;
+    margin-left: 30px;
+}
+
+section.Agriculture .bee h3 {
+    font-size: 30px;
+    margin-top: 40px;
+    margin-left: 30px;
+    color: var(--dark);
+}
+
+section.Agriculture .bee p {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 30px;
+    color: var(--dark);
+}
+
+section.Agriculture .dairy h2 {
+    font-size: 30px;
+    margin-top: 10px;
+    color: var(--dark);
+}
+
+section.Agriculture .dairy p {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-right: 30px;
+    color: var(--dark);
+}
+
+section.Agriculture .poutrypic {
+    padding-top: 10px;
+    margin-top: 90px;
+    margin-right: 30px;
+}
+
+section.Agriculture .fish h5 {
+    font-size: 30px;
+    margin-top: 40px;
+    margin-right: 30px;
+    color: var(--dark);
+}
+
+section.Agriculture .fish p {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-right: 30px;
+    color: var(--dark);
+}
+
+section.Agriculture .beepic {
+    padding-top: 70px;
+    margin-top: 90px;
+    margin-right: 30px;
+}

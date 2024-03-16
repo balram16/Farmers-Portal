@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat;:wght@100;300;400;500;700&display=swap');
+@import './variables.css';
+@import './utilities.css';
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--pure);
+    background: rgba(145, 71, 28, 0.904);
+}
+
+header {
+    background: url('..//img/farmerbackground.jpg');
+    min-height: 100vh;
+    background-size: cover;
+}
+
+header nav {
+    padding: 20px 40px 20px 100px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    border-bottom: 1px solid var(--gray);
+}
+
+header nav .nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .nav-right a {
+    text-decoration: none;
+    color: var(--pure);
+    margin-right: 30px;
+    position: relative;
+}
+
+header nav .nav-right a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    width: 0;
+    height: 2px;
+    background: var(--pure);
+    transition: width .3s ease-in-out;
+}
+
+header nav .nav-right a:hover:after {
+    width: 70%;
+}
+
+header nav .nav-right a.active:after {
+    width: 70%;
+}
+
+header nav .nav-right .search>div {
+    background: var(--dark);
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 50px;
+}
+
+header nav .nav-right .search>div input {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    ;
+}
+
+.hero {
+    position: var(--pure);
+}
+
+.hero .cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: calc(100vh-80px);
+}
+
+.hero .cta h1 {
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 1.7;
+    margin: 30px;
+}
+
+.hero .cta p {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.7;
+    margin: 30px;
+}
+
+.hero .cta>div {
+    flex: 1;
+}
+
+.hero .cta .left-section {
+    padding: 0 60px 0 30px;
+}
+
+.hero .cta .btn {
+    margin-left: 40px;
+}
+
+section.strip {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--dark);
+    padding: 20px 0;
+}
+
+section.strip h3 {
+    margin-left: 30%;
+}
+
+section.Agriculture {
+    display: grid;
+    grid-template-columns: 0.7fr 120px 1fr;
+    grid-gap: 80px;
+    padding: 100px 0;
+}
+
+section.Agriculture .left-block {
+    margin-left: 30px;
+}
+
+section.Agriculture .main-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section.Agriculture .main-body span {
+    font-size: 0;
+    position: relative;
+}
+
+section.Agriculture .main-body span img {
+    width: 150%;
+    margin-top: 60px;
+}
+
+section.Agriculture .block {
+    width: 70%;
+}
+
+section.Agriculture .block h4 {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+section.Agriculture .block .with-underline {
+    position: relative;
+    margin-bottom: 38px;
+}
+
+section.Agriculture .block .with-underline:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    display: block;
+    width: 57%;
+    height: 2px;
+    background: var(--pure);
+}
+
+section.Agriculture p {
+    line-height: 1.6;
+}
+
+section.Agriculture .block h2 {
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+section.Agriculture .block.payload {
+    padding: 130px;
+}
+
+section.Agriculture .block.payload h2 {
+    padding-left: 80px;
+    font-size: 30px;
+}
+
+section.Agriculture .block.farm {
+    padding-top: 200px;
+    margin-top: 40px;
+}
+
+section.Agriculture .block h6 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+section.Agriculture .block button {
+    margin-top: 30px;
+}
+
+section.Agriculture .block.update {
+    padding: 130px;
+    margin-top: 200px;
+}
+
+section.Agriculture .block.update h5 {
+    padding-left: 80px;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+section.Agriculture .main-body span:nth-child(2):after {
+    bottom: 6%;
+    right: 100%;
+    content: '';
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 300px;
+    background: var(--pure);
+}
+
+footer {
+    background: var(--dark);
+    padding: 10px 30px;
+}
+
+footer>div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+footer .copyright span {
+    font-size: 12px;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+footer .copyright img {
+    height: 80px;
+}
+
+footer h1 {
+    font-size: 18px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+footer h1:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: var(--pure);
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li:nth-child(even) {
+    margin: 10px 0;
+}
+
+footer ul li a {
+    color: var(--mild);
+    text-decoration: none;
+    font-size: 14px;
+    transition: all.3s ease-in-out;
+}
+
+section.Agriculture .block.farm a {
+    padding-top: 0px;
+}
+
+section.Agriculture .block.payload a {
+    padding-top: 0px;
+}
+
+section.Agriculture .block.update a {
+    padding-top: 0px;
+}

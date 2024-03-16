@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat;:wght@100;300;400;500;700&display=swap');
+@import './variables.css';
+@import './utilities.css';
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--pure);
+}
+
+header {
+    background: url('..//img/update.jpg');
+    min-height: 100vh;
+    background-size: cover;
+}
+
+header nav {
+    padding: 20px 40px 20px 100px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    border-bottom: 1px solid var(--gray);
+}
+
+header nav .nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .nav-right a {
+    text-decoration: none;
+    color: var(--dark);
+    margin-right: 30px;
+    position: relative;
+}
+
+header nav .nav-right a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    width: 0;
+    height: 2px;
+    background: var(--dark);
+    transition: width .3s ease-in-out;
+}
+
+header nav .nav-right a:hover:after {
+    width: 70%;
+}
+
+header nav .nav-right a.active:after {
+    width: 70%;
+}
+
+header nav .nav-right .search>div {
+    background: var(--dark);
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 50px;
+}
+
+header nav .nav-right .search>div input {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    ;
+}
+
+section.Agriculture .first-block .happy h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--dark);
+}
+
+section.Agriculture .first-block .happy p {
+    font-size: 15px;
+    line-height: 28px;
+    color: var(--dark);
+    height: 90px;
+    overflow: hidden;
+}
+
+section.Agriculture .first-block .happy {
+    width: 30%;
+    float: left;
+    margin: 50px 20px;
+    background-color: var(--pure);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0, 15);
+}
+
+section.Agriculture .first-block img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+section.Agriculture .first-block .happy a {
+    display: inline-block;
+    color: var(--pure);
+    background-color: var(--dark);
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+section.Agriculture .first-block .happy a:hover {
+    background: var(--pure);
+    color: var(--dark);
+    border-color: var(--dark);
+}
+
+section.Agriculture .first-block .showContent p {
+    height: auto;
+}
+
+section.Agriculture .first-block .happy.showContent a.readmore-btn {
+    background-color: red;
+}
+
+section.Agriculture .second-block .happy h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--dark);
+}
+
+section.Agriculture .second-block .happy p {
+    font-size: 15px;
+    line-height: 28px;
+    color: var(--dark);
+    height: 90px;
+    overflow: hidden;
+}
+
+section.Agriculture .second-block .happy {
+    width: 30%;
+    float: left;
+    margin: 50px 20px;
+    background-color: var(--pure);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0, 15);
+}
+
+section.Agriculture .second-block img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+section.Agriculture .second-block .happy a {
+    display: inline-block;
+    color: var(--pure);
+    background-color: var(--dark);
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+section.Agriculture .second-block .happy a:hover {
+    background: var(--pure);
+    color: var(--dark);
+    border-color: var(--dark);
+}
+
+section.Agriculture .second-block .showContent p {
+    height: auto;
+}
+
+section.Agriculture .second-block .happy.showContent a.readmore-btn {
+    background-color: red;
+}
